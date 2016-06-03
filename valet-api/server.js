@@ -1,12 +1,3 @@
-// // Socket.io client boilerplate
-// var socket = require('socket.io-client')(process.env.PARKING_SPOT1 || 'wss://ie-websocket-server-prod.run.aws-usw02-pr.ice.predix.io/consume?routing-key=87f0bbcf-1b39-49c6-bbce-0c7a95ee687b&service-name=ie-parking');
-// socket.on('connect', function(){
-//   console.log('Connected to Server');
-// });
-// socket.on('event', function(data){
-//   console.log(data);
-// });
-// socket.on('disconnect', function(){});
 var express  = require('express');
 var app = express();
 
@@ -59,8 +50,6 @@ router.use(function(req, res, next) {
 router.get('/', function(request, response) {
     response.json({ message: 'Welcome to Valet!' });
 });
-
-
 
 router.get('/parking-spot', function(request, response){
   if (parkingSpace1.available == true){
