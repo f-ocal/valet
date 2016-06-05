@@ -1,4 +1,22 @@
-
+var sample = {
+        "event-uid": "360597e9-3a3d-4f1c-a686-4d575ba11f55",
+        "timestamp": 1461019279795,
+        "event-type": "PKOUT",
+        "device-uid": "HYP1040-75",
+        "location-uid": "158-parkingspot",
+        "properties": {
+        "object-uid": "cf0dfb91-b11e-4d4d-9213-eb057187122f",
+        "coordinates":
+        "32.711637:-117.15732968838816,32.711637100678395:-117.15736341303291,32.711734:-117.15736427535526,32.711733:-117.15733055071051"
+        },
+        "measures": [
+        {
+        "tag": "PKOVLP",
+        "value": 100,
+        "unit": "PCT"
+        }
+        ]}
+				
 var express  = require('express');
 var app = express();
 
