@@ -1,3 +1,10 @@
+// To upgrade node in MAC, please follow type below commands:
+// >brew update
+// >brew upgrade node
+
+// To upgrade node in Windows, please type below commands:
+// >sudo apt-get update node
+
 var express  = require('express');
 var app = express();
 var ws = require('nodejs-websocket')
