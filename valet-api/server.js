@@ -1,4 +1,3 @@
-console.log('Started app');
 var http = require('https');
 var googleMaps = require('googlemaps');
 
@@ -44,7 +43,6 @@ var addressLookupFromCoordinates = function(lat, lon) {
   }
 
   gmAPI.reverseGeocode(lookup, function(err, result) {
-    console.log('reverse geocode lookup');
     console.log(result.results[0].formatted_address);
   });
 }
@@ -88,7 +86,6 @@ predixConnection.on('text', function(data){
 
 console.log(predixConnection.readyState);
 
-console.log("This is outside");
 
 var port = process.env.PORT || 3000;
 var router = express.Router();
