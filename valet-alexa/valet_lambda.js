@@ -102,8 +102,8 @@ function getWelcomeResponse(callback) {
     // If we wanted to initialize the session to have some attributes we could add those here.
     var sessionAttributes = {};
     var cardTitle = "Welcome to Valet";
-    var speechOutput = "Welcome to Valet." +
-        "Please tell me your favorite color by saying, my favorite color is red";
+    var speechOutput = "Welcome to Valet. " +
+        "Your hands-free private parking assistance";
     // If the user either does not reply to the welcome message or says something that is not
     // understood, they will be prompted again with this text.
     var repromptText = "Please tell me your favorite color by saying, " +
@@ -116,7 +116,7 @@ function getWelcomeResponse(callback) {
 
 function handleSessionEndRequest(callback) {
     var cardTitle = "Session Ended";
-    var speechOutput = "Thank you for trying the Alexa Skills Kit sample. Have a nice day!";
+    var speechOutput = "Thank you for using Valet. Have a safe drive!";
     // Setting this to true ends the session and exits the skill.
     var shouldEndSession = true;
 
